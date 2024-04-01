@@ -1,1 +1,43 @@
-<h1>Hello</h1>
+---
+import GridCell from '../components/GridCell.astro'
+import Layout from '../layouts/Layout.astro'
+
+import { photos } from '../photos'
+---
+
+<Layout title="Astro + View Transitions Photo Gallery">
+    <main>
+      <div class="grid grid--large">
+        <div class="grid__cell grid__cell--padded">
+          <div class="frame">
+            <h1 class="frame__title oh">
+              <span class="oh__inner"
+                >Astro +<br />View Transitions<br />Photo Gallery</span
+              >
+            </h1>
+            <nav class="frame__links">
+              <a
+                href="https://github.com/Charca/astro-photo-gallery"
+                class="oh"
+                target="_blank"
+                rel="noopener"><span class="oh__inner">Source code</span></a
+              >
+              <div>
+                Original demo by <a
+                  href="https://twitter.com/codrops"
+                  class="oh"
+                  target="_blank"
+                  rel="noopener"><span class="oh__inner">@codrops</span></a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+        {
+          photos.map((photo, index) => (
+            <GridCell photo={photo} photoIndex={index} />
+          ))
+        }
+      </div>
+    </main>
+  </Layout>
