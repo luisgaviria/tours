@@ -3,40 +3,21 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "verbatimModuleSyntax": true,
-    "baseUrl": "/home/patryk/Desktop/tours",
+
+    "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@util/*": [
-        "src/util/*"
-      ],
-      "@cms/*": [
-        "src/cms/*"
-      ],
-      "@icons/*": [
-        "src/icons/*"
-      ],
-      "@src/*": [
-        "src/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@locales/*": [
-        "src/locales/*"
-      ]
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@util/*": ["src/util/*"],
+      "@cms/*": ["src/cms/*"],
+      "@icons/*": ["src/icons/*"],
+      "@src/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@locales/*": ["src/locales/*"]
     },
-    "jsx": "react-jsx",
-    "types": [
-      "vue3-toastify/global"
-    ],
-    "jsxImportSource": "react"
+
+    "jsx": "preserve",
+    "types": ["vue3-toastify/global"]
   }
 }

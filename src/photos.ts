@@ -12,10 +12,10 @@ export type Photo = {
 export const photos: Photo[] = [
   {
     id: 1,
-    title: 'Death by JavaScript',
+    title: 'Parque Nacional De Utria',
     description:
-      "Death by JavaScript: When you're so async, you forget to await your own life.",
-    url: '/img/1.webp',
+      "Un Lugar inolvidable, esta es la vista en la madrugada desde la cocina de Absalon",
+    url: '/img/Utria.webp',
   },
   {
     id: 2,
