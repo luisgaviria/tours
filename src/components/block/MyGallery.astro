@@ -1,0 +1,18 @@
+---
+import GridCell from '@components/gallery/GridCell.astro'
+import Layout from '@components/gallery/layouts/Layout.astro'
+
+const {images} = Astro.props;
+---
+
+<Layout title="Astro + View Transitions Photo Gallery">
+    <main>
+      <div class="gridd grid--large">
+        {
+          images.map((photo, index) => (
+            <GridCell photo={photo} photoIndex={index} />
+          ))
+        }
+      </div>
+    </main>
+  </Layout>
