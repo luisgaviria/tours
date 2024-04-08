@@ -1,0 +1,36 @@
+---
+import "../../styles/image_card.css";
+import { Picture } from "astro-imagetools/components";
+
+---
+
+<div class="flex-container">
+    <div class=card-home-one">
+      <Picture
+        class=card-image"
+        width={500}
+        height={300}
+        src="/screenshots/nebulix-00-start.jpg"
+        alt="house icon"
+      />
+      <div class=card-info-wrapper">
+        <div class=title-wrapper-cards">
+          <h2>Search Massachusetts Homes!</h2>
+        </div>
+        <div class=card-description">
+          <p>Browse MLS home listings now.</p>
+        </div>
+        {/* <span class="hover-text">
+      Random new text added when hovering on card
+    </span> */}
+        <div class=apply-btn">
+          <a href={"/search"}>
+            <div
+              class=btn-cards"
+            >
+              <span>ADVANCED SEARCH</span>
+            </div>
+        </a>
+        </div>
+      </div>
+    </div>

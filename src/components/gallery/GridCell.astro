@@ -1,6 +1,7 @@
 ---
 import { Picture } from "astro-imagetools/components";
 import { getImageUrl, getImageTransitionName } from "@util/helpers";
+import ImageCard from "@components/cards/ImageCard.astro";
 
 interface Props {
   noId?: boolean
@@ -24,4 +25,5 @@ const { noId, photo, photoIndex, isCurrent } = Astro.props
       />
     </a>
   </div>
+  <!-- <ImageCard/> -->
 </div>
